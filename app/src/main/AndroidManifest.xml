@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="jp.mstssk.twiccaplugins.nfnf"
-          xmlns:android="http://schemas.android.com/apk/res/android"
-          android:versionCode="3"
-          android:versionName="1.5.1">
+<manifest
+    package="jp.mstssk.twiccaplugins.nfnf"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="4"
+    android:versionName="2.0.0">
 
     <uses-sdk
         android:minSdkVersion="4"
-        android:targetSdkVersion="10"/>
+        android:targetSdkVersion="23"/>
     <supports-screens
         android:anyDensity="true"
         android:largeScreens="true"
@@ -31,6 +32,11 @@
             <intent-filter>
                 <action android:name="jp.r246.twicca.ACTION_EDIT_TWEET"/>
                 <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
             </intent-filter>
         </activity>
     </application>
